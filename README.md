@@ -11,4 +11,3 @@ Daily Tasks:
 5. Creating a Front-end to display the data fetched and the data stored in the database.
 6. Implementing the functionalities like search and the calender for enhanced user experience.
 7. Implementing the Authentication functionalities.
-
