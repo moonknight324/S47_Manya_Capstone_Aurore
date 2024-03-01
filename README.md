@@ -1,9 +1,9 @@
-Project Title : "Aurore"
+# Project Title : Aurore
 
-Project Idea : 
+## Project Idea : 
 The goal is to develop a Space Exploration app  “Aurore” that captivates space enthusiasts, students, and anyone curious about our universe and planets. The app will serve as a platform that provides reliable information about space missions, celestial events, and user-contributed space facts.
 
-Daily Tasks: 
+## Daily Tasks: 
 1. Initialising the project with the README file.
 2. Working on the Back-end by creating a Database for the project.
 3. Fetching the data from the APIs.
