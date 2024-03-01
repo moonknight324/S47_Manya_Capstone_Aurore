@@ -1,8 +1,8 @@
+const spaceHistory = require("./historyData.json")
 const express = require("express");
 const app = express();
-
-app.get("/", (req, res) => {
-    res.send("Hello there!");
+app.get("/history", (req, res) => {
+    res.send(spaceHistory.history);
 });
 
 app.listen(5000, () => {
