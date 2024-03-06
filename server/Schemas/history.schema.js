@@ -33,6 +33,6 @@ const SpaceHistorySchema = new mongoose.Schema({
  },
 });
 
-const HistoryModel = mongoose.model('SpaceHistory', SpaceHistorySchema);
+const HistoryModel = mongoose.model('static_datas', SpaceHistorySchema);
 
 module.exports = HistoryModel;
