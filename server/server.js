@@ -19,6 +19,10 @@ mongoose
     console.error("Error connecting to MongoDB:", error.message);
   });
 
+app.get("/", (req, res) => {
+  res.send("Hello there!🙏🏻");
+})
+
 app.get("/history", async (req, res) => {
   try {
     const spaceHistory = await history.findOne();
