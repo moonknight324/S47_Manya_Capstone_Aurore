@@ -24,6 +24,7 @@ The goal is to develop a Space Exploration app  “Aurore” that captivates spa
 6. Implementing the functionalities like search and the calender for enhanced user experience.
 7. Implementing the Authentication functionalities.
 
+
 ## Deployed Links:
 Frontend: https://aurore.pages.dev/ 
 Backend: https://aurore.onrender.com
