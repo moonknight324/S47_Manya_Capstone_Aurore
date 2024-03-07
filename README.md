@@ -26,6 +26,6 @@ The goal is to develop a Space Exploration app  “Aurore” that captivates spa
 
 
 ## Deployed Links:
-Frontend: https://aurore.pages.dev/ 
-Backend: https://aurore.onrender.com
+1.Frontend: https://aurore.pages.dev/ 
+2.Backend: https://aurore.onrender.com
 
