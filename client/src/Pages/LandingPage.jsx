@@ -3,6 +3,7 @@ import "../Styles/LandingPage.css";
 import { FaPinterest } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function LandingPage() {
   return (
@@ -23,6 +24,14 @@ function LandingPage() {
           </div>
         </div>
         <div className="right-nav">
+          <Link to={"/login"}>
+            <div><p style={{ color: "white", textDecoration: "none" }}>Log In</p></div>
+          </Link>
+          <Link to={"/signup"}>
+            <div >
+              <p style={{ color: "white", textDecoration: "none" }}>Sign Up</p>
+            </div>
+          </Link>
           <div>
             <FaPinterest />
           </div>
@@ -50,11 +59,12 @@ function LandingPage() {
             fingertips.
           </h4>
         </div>
-        
       </div>
-      <button className="start-btn">
+      <Link to="/login">
+        <button className="start-btn">
           <p>Get Started</p>
         </button>
+      </Link>
     </div>
   );
 }
