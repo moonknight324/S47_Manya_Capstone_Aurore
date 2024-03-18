@@ -4,7 +4,9 @@ import { IoMail } from "react-icons/io5";
 import { Link } from 'react-router-dom';
 
 function SignUpForm() {
-
+  const loginwithgoogle = () => {
+    window.open("http://localhost:5000/auth/google/callback","_self")
+  }
   return (
     <div className="loginPage">
     <div className="wrapper">
@@ -40,6 +42,9 @@ function SignUpForm() {
           <p>Already have an account? <Link to={"/login"}>Login</Link></p>
         </div>
       </form>
+      <button className='login-with-google-btn' onClick={loginwithgoogle}>
+            Sign in with Google
+          </button>
     </div>
     </div>
   );
