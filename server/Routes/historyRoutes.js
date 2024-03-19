@@ -9,7 +9,7 @@ const router = express.Router();
 
 app.use(express.json());
 
-router.get("/history", async (req, res) => {
+router.get("/", async (req, res) => {
   try {
     const spaceHistory = await history.findOne();
     if (!spaceHistory) {
