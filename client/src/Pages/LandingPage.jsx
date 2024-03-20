@@ -4,11 +4,19 @@ import { FaPinterest } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function LandingPage() {
+  const navigate = useNavigate();
+  const handlelogin = () => {
+    navigate("/login");
+  }
+  const handlesignup = () => {
+    navigate("/signup");
+  }
   return (
     <div className="LandingPage">
-      <nav>
+      <nav className="nav-landingPage">
         <div className="left-nav">
           <div>
             <p>Home</p>
@@ -24,46 +32,43 @@ function LandingPage() {
           </div>
         </div>
         <div className="right-nav">
-          <Link to={"/login"}>
-            <div><p style={{ color: "white", textDecoration: "none" }}>Log In</p></div>
-          </Link>
-          <Link to={"/signup"}>
-            <div >
-              <p style={{ color: "white", textDecoration: "none" }}>Sign Up</p>
+            <div onClick={handlelogin}>
+            <button className="btns-landingpage">
+              LogIn
+            </button>
             </div>
-          </Link>
+            <div onClick={handlesignup}>
+              <button className="btns-landingpage">
+              Sign Up
+              </button >
+            </div>
           <div>
-            <FaPinterest />
+            <FaPinterest className="icons" />
           </div>
           <div>
-            <FaTwitter />
+            <FaTwitter className="icons"/>
           </div>
           <div>
-            <FaInstagram />
+            <FaInstagram className="icons"/>
           </div>
         </div>
       </nav>
-      <div className="content">
+      <div className="content-landingPage">
         <div>
-          <h1>Aurore ,</h1>
+          <h1 className="heading-landingPage">Aurore</h1>
           <p className="title">Your Space Exploration Hub.</p>
         </div>
+        <div className="slogan">
+        </div>
         <div className="description">
-          <h4>Tired of chasing down space news from scattered sources? </h4>
-          Aurore is your one-stop shop for all things cosmic! <br />
-          Fuel your curiosity with reliable information about space missions,
-          <br /> upcoming celestial events, and fascinating facts.
-          <h4>
+          <p className="discription-landingpage">
             Engage with a community of space enthusiasts and share your own
-            discoveries. <br /> Aurore: Where the Universe is at your
-            fingertips.
-          </h4>
+            discoveries. 
+          </p>
         </div>
       </div>
       <Link to="/login">
-        <button className="start-btn">
-          <p>Get Started</p>
-        </button>
+        <button className="start-btn">Get Started</button>
       </Link>
     </div>
   );
