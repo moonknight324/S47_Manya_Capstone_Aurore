@@ -6,6 +6,7 @@ import SignUp from "./Pages/SignUp";
 import MarsRover from "./FetchedData/MarsRover";
 import APOD from "./FetchedData/APOD";
 import HomePage from "./Pages/HomePage";
+import Articles from "./FetchedData/Articles";
 import ISROLaunches from "./FetchedData/ISROLaunches";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/marsrover" element={<MarsRover />}></Route>
         <Route path="/apod" element={<APOD />}></Route>
         <Route path="/isro-launches" element={<ISROLaunches />} />
+        <Route path="/articles" element={<Articles />}/>
       </Routes>
     </>
   );
