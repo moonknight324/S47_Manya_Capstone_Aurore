@@ -8,6 +8,7 @@ import APOD from "./FetchedData/APOD";
 import HomePage from "./Pages/HomePage";
 import Articles from "./FetchedData/Articles";
 import ISROLaunches from "./FetchedData/ISROLaunches";
+import Blogs from "./FetchedData/Blogs";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/apod" element={<APOD />}></Route>
         <Route path="/isro-launches" element={<ISROLaunches />} />
         <Route path="/articles" element={<Articles />}/>
+        <Route path="/blogs" element={<Blogs />}/>
       </Routes>
     </>
   );
